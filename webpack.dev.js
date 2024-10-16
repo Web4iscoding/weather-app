@@ -5,6 +5,7 @@ module.exports = merge(common, {
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
-    watchFiles: [""],
+    watchFiles: ["./src/index.html"],
+    host: '0.0.0.0',
   },
 });

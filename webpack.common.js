@@ -2,13 +2,13 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "",
+  entry: "./src/app.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  plugins: [new HtmlWebpackPlugin({ template: "" })],
+  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
   module: {
     rules: [
       {
@@ -24,6 +24,10 @@ module.exports = {
         type: "asset/resource",
       },
       {
+        test: /\.json$/,
+        type: "json",
+      },
+      {
         test: /\.(?:js|mjs|cjs)$/,
         exclude: /node_modules/,
         use: {
@@ -31,7 +35,6 @@ module.exports = {
           options: {
             targets: "defaults",
             presets: [["@babel/preset-env"]],
-	    plugins: ['@babel/plugin-proposal-decorators', { version: "2023-11" }],
 	    cacheDirectory: true
           },
         },

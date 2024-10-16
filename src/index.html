@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web's Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="search">
+        <img src="./asset/search.svg"></img>
+        <input type="text">
+    </div>
+    <div class="loading">
+        <div></div>
+    </div>
+    <div class="grid">
+        <div class="header">
+            <div class="header-date">Today</div>
+            <div class="header-info">
+                <div class="header-info-left">
+                    <div class="header-info-address"></div>
+                    <div class="header-info-condition"></div>
+                    <div class="header-info-temp"></div>
+                </div>
+                <div class="header-info-right">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="hours section"></div>
+        <div class="days section"></div>
+        <div class="misc1">
+            <div class="visibility section">
+                <div class="visibility-icon"></div>
+                <div class="visibility-data"></div>
+            </div>
+            <div class="sunrise section">
+                <div class="sunrise-icon"></div>
+                <div class="sunrise-data"></div>
+            </div>
+            <div class="sunset section">
+                <div class="sunset-icon"></div>
+                <div class="sunset-data"></div>
+            </div>
+        </div>
+        <div class="misc2">
+            <div class="wind section">
+                <div class="wind-speed">
+                    <div class="wind-speed-icon"></div>
+                    <div class="wind-speed-data"></div>
+                </div>
+                <div class="wind-dir">
+                    <div class="wind-dir-icon"></div>
+                    <div class="wind-dir-data"></div>
+                </div>
+            </div>
+            <div class="misc2-container">
+                <div class="precip section">
+                    <div class="precip-icon"></div>
+                    <div class="precip-data"></div>
+                </div>
+                <div class="pressure section">
+                    <div class="pressure-icon"></div>
+                    <div class="pressure-data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toggle">
+    </div>
+</body>
+</html>

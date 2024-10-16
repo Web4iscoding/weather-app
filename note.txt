@@ -1,0 +1,7 @@
+rain
+partly-cloudy-night
+partly-cloudy-day
+cloudy
+wind
+clear-day
+clear-night
