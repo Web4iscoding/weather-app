@@ -13,6 +13,7 @@ import barometer from "../asset/fill/lottie/barometer.json";
 import windsock from "../asset/fill/lottie/windsock.json";
 import raindropMeasure from "../asset/fill/lottie/raindrop-measure.json";
 import fog from "../asset/fill/lottie/fog.json";
+import snow from "../asset/fill/lottie/snow.json";
 import loadingAsset from "../asset/loading.json";
 import toggleAsset from "../asset/toggle.json";
 
@@ -31,7 +32,8 @@ const icons = {
     "barometer": barometer,
     "windsock": windsock,
     "raindrop-measure": raindropMeasure,
-    "fog": fog
+    "fog": fog,
+    "snow": snow
 }
 
 export function loading() {
